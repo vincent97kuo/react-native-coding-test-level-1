@@ -158,6 +158,7 @@ class ContactUsScreen extends Component{
                     onConfirm={this.handleConfirm}
                     onCancel={this.hideDatePicker}
                     maximumDate={new Date()}
+                    isDarkModeEnabled
                   />
                   {this.state.dob && (
                     <TextField2
