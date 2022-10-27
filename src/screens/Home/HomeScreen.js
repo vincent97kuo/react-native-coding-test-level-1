@@ -51,7 +51,34 @@ class HomeScreen extends Component{
                     </CustomButton>
                 </View>
                 
-                    
+                <View
+                    style={{
+                        padding: 10,
+                        // alignItems: 'center',
+                        shadowColor: "black",
+                        shadowOffset: {
+                            width: 0,
+                            height: 5
+                        },
+                        shadowOpacity: 0.4,
+                        shadowRadius: 9,
+                    }}
+                >
+                    <CustomButton
+                        fontSize={16}
+                        color={Colors.primaryColor}
+                        style={{
+                            backgroundColor: Colors.primaryDark,
+                            borderWidth: 0,
+                            borderRadius: 40,
+                        }}
+                        onPress={() => {
+                            this.props.navigation.navigate('CatalogScreen')
+                        }}
+                    >
+                        View Catalog
+                    </CustomButton>
+                </View>
             </View>
         );
     }

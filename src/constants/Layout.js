@@ -78,7 +78,7 @@ export default {
   },
   buttonEndIconSize: 45,
   shadowBox: {
-    shadowColor: '#B7BECD',
+    shadowColor: 'grey',
     shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.3,
     shadowRadius: 5,
