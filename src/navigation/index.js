@@ -3,6 +3,8 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createAppContainer } from "react-navigation";
 import HomeScreen from "../screens/Home/HomeScreen";
 import ContactUsScreen from "../screens/ContactUs/ContactUsScreen";
+import CatalogScreen from '../screens/Catalog/CatalogScreen';
+import CatalogInfo from '../screens/Catalog/CatalogInfo';
 
 // const navigation = createStackNavigator(
 //     {
@@ -42,6 +44,8 @@ function RootNavigator() {
     >
       <Stack.Screen name="HomeScreen" component={HomeScreen} />
       <Stack.Screen name="ContactUsScreen" component={ContactUsScreen} />
+      <Stack.Screen name="CatalogScreen" component={CatalogScreen} />
+      <Stack.Screen name="CatalogInfo" component={CatalogInfo} />
     </Stack.Navigator>
   );
 }
